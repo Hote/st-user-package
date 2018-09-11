@@ -1,0 +1,13 @@
+// A simple Sublime Text build system for AsciiDoc
+//
+// Install with:
+//
+// $ curl -# -k \
+//      -o "$HOME/Library/Application Support/Sublime Text 2/Packages/AsciiDoc/AsciiDoc.sublime-build" \
+//         https://raw.github.com/gist/3804588/AsciiDoc.sublime-build
+//
+{
+  "cmd": ["/usr/local/bin/asciidoc","--trace", "-a","toc","-a","iconsdir=/usr/local/etc/asciidoc/images/icons","-a","icons","$file"],
+  "path": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+  "selector": "text.html.asciidoc"
+}
